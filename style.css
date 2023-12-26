@@ -1,0 +1,190 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+nav{
+    height: 100px;
+    width: 100vw;
+    background-color: #ED7D31;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.nav-list {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+
+.nav-list-mobileview{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: -30px;
+    top: -80px;
+    z-index: 1;
+    background-color: coral;
+}
+.menu-icon{
+    display: none;
+}
+
+.display{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    z-index: 1;
+    background-color: coral;
+    line-height: 30px;
+    padding: 0px 10px;
+
+}
+
+
+
+.profile-pic{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-pic img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.about-me{
+    width: 50vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.about-me p{
+    margin: 10px auto;
+}
+.project-layout{
+    width: 80vw;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0.5rem;
+}
+.project-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+.project-cards img{
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    margin: 0px 0px 10px 0px;
+}
+footer{
+    width: 70vw;
+    height: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+footer >div{
+    margin: 10px 15% 10px ;
+}
+.footer-heading p{
+    width: 400px;
+    margin: auto;
+}
+input, textarea{
+    border: none;
+    padding: 10px 0px 2px 0px;
+    border-bottom: 2px solid green;
+    width: 90%;
+}
+input:focus ,textarea:focus{
+    border: none;
+    outline: none;
+    padding: 10px 0px 2px 0px;
+    border-bottom: 2px solid green;
+}
+.sender-details{
+    display: flex;
+    width: 100%;
+    margin: 10px 0px 10px 5px;
+
+}
+.sender-details div{
+    width: 50%;
+    
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.contact-details i{
+    width: 50px;
+    height: 50px;
+    
+}
+
+h1, h2{
+    margin: 20px 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+@media  screen and (max-width :550px) {
+    .menu-icon{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .nav-list{
+        display: none;
+    }
+    footer{
+        width: 90%;
+    }
+    footer >div{
+        margin: 20px 10px 10px 20px ;
+    }
+    
+    .about-me{
+        width: 80vw;
+    }
+    nav{
+        height: 50px;
+    }
+    
+}
